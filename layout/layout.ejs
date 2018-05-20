@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html <% if(config.language) { %>lang="<%= config.language %>"<% } else { %>lang="en"<% }%>>
+  <%- partial('_partial/head') %>
+
+  <!-- use specific layout for about page -->
+  <% if (page.path.indexOf('about') > -1){ %>
+     <%- partial('_partial/about', null, {cache: !config.relative_link}) %>
+  <% } else { %>
+  <body class="bg-dark">
+    <!-- navigation -->
+
+    <%- partial('_partial/masthead', null, {cache: !config.relative_link}) %>
+
+    <!-- end navigation -->
+
+    <!-- main -->
+    <div class="container main-wrapper">
+    <hr class="hr-nav">
+
+      <div class="row">
+        <div class="col-lg-9 col-md-10 mx-auto">
+          <section id="main"><%- body %></section>
+        </div>
+        <div class="col-lg-3 col-md-2 mx-auto main-sidebar">
+           <% if (theme.sidebar && theme.sidebar !== 'bottom'){ %>
+            <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
+          <% } %>
+        </div>
+      </div>
+ 
+    <hr class="hr-nav">
+
+      <!-- footer -->
+      <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+
+      <! -- insert javascripts -->
+      <%- partial('_partial/after-footer') %>
+
+    </div>
+    <!-- end main -->
+  </body>
+</html>
+<% } %>

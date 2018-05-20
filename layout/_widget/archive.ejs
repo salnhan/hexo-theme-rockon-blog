@@ -1,0 +1,9 @@
+<% if (page.path != 'archives/index.html'){ %>
+	<% if (site.posts.length){ %>
+	<div class="card main-sidebar--widget">
+	  <div class="card-header main-sidebar--widget-header"><%= __('archive_a') %></div>
+	  <%- list_archives({show_count: theme.show_count, type: theme.archive_type}) %>
+	</div>
+	<% } %>
+<% } %>
+

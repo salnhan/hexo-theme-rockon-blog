@@ -1,0 +1,8 @@
+<footer class="footer">
+  <% if (theme.sidebar === 'bottom'){ %>
+    <%- partial('_partial/sidebar') %>
+  <% } %>
+  <div class="section_footer__copyright">
+		<i class="fa fa-copyright"></i> <span><%= date(new Date(), 'YYYY') %> <%= config.author || config.title %></span>
+	</div>
+</footer>

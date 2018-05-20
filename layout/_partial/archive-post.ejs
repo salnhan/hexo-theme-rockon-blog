@@ -1,0 +1,12 @@
+<% if (date(currentDate) != date(previousDate)) { %>
+</li>
+<li class="list-group-item">
+	<p class="lead archive-date" itemprop="datePublished">
+		<time datetime="<%= date_xml(post.date) %>" ><%= date(post.date, 'MMM D') %></time>
+	</p>
+<% } %>
+<p>
+    <i class="fas fa-link"></i> <a class="archive-post-link" href="<%- url_for(post.path) %>" itemprop="name"><%= post.title %></a>
+</p>
+
+

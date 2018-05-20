@@ -1,0 +1,22 @@
+{
+  "name": "hexo-theme-rockon-blog",
+  "description": "",
+  "main": "",
+  "authors": [
+    "salnhan <mascit10@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/salnhan/hexo-theme-rockon-blog",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "fontawesome": "^5.0.13",
+    "jquery": "3.3.1"
+  }
+}

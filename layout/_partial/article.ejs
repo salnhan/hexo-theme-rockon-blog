@@ -1,0 +1,31 @@
+<% if (page.path == 'index.html' || page.path == 'page/' + page.current + '/index.html') {%>
+<div class="col-md-6">
+<% } else {%>
+<div class="col">
+<% } %>
+  <div class="card mb-4 box-shadow" itemscope itemprop="blogPost">
+    <div class="card-header article-header">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="article-title" itemprop="name"><%= post.title %></div>
+        <%- partial('post/date', {class_name: 'btn btn-info article-date', date_format: 'DD.MM.YYYY'}) %>
+      </div>
+    </div>
+    <div class="article-preview--body" itemprop="articleBody">
+      <% if (page.path == 'index.html' || page.path == 'page/' + page.current + '/index.html') {%>
+        <%- post.teaser %>
+        <div class="d-flex justify-content-between align-items-center article-readmore-bar">
+          <a class="btn btn-sm btn-outline-info" href="<%- url_for(post.path) %>">Read more</a>
+        </div>
+      <% } else {%>
+          <%- post.content %>
+      <% } %>
+    </div>
+    <hr>
+    <% if (page.path == 'index.html') {%>
+      <div class="article-preview--footer">
+        <%- partial('post/tag') %>
+        <%- partial('post/category') %>
+      </div>
+    <% } %>
+  </div>
+</div>

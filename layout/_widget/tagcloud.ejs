@@ -1,0 +1,6 @@
+<% if (site.tags.length){ %>
+<div class="card main-sidebar--widget">
+  <div class="card-header main-sidebar--widget-header"><%= __('tagcloud') %></div>
+  <%- tagcloud() %>
+</div>
+<% } %>
