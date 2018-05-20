@@ -8,12 +8,12 @@ body {
 	-o-background-size: cover;
 	height:100%;
 }
+
 nav {
 	font-weight: 500;
 	font-family: 'Saira Extra Condensed',serif;
 	font-size: 1.35rem;
 }
-
 
 .navbar {
 	background-color: transparent;
@@ -34,6 +34,7 @@ nav {
 .main-sidebar {
 	font-family: 'Open Sans Condensed', sans-serif;
 }
+
 .main-sidebar--widget {
 	margin-bottom: 10px;
 	font-size: 0.8rem;
@@ -107,11 +108,6 @@ nav {
 	margin-bottom: -1px;
 }
 
-.archives-post-year {
-	width: 45%;
-	margin-right: 10px;
-}
-
 .archive-post-link {
 	color: #181719;
 	font-weight: 600;
@@ -134,10 +130,17 @@ nav {
 
 .footer {
 	margin:  10px 0 10px 0;
-	color:#fff;
+	color:#ffffff80;
 	font-weight: 500;
 	font-size: 1.2rem;
 	font-family: 'Saira Extra Condensed',serif;
+	//position:absolute;
+	//width: 100%;
+	//bottom:0;
+}
+
+.footer a {
+	color: #fff;
 }
 
 .page-number {
@@ -160,13 +163,13 @@ nav {
 
 .prev, .next {
 	position: relative;
-    display: block;
-    padding: .5rem .75rem;
-    margin-left: -1px;
-    line-height: 1.25;
-    color: #007bff;
-    background-color: #fff;
-    border: 1px solid #dee2e6;
+	display: block;
+	padding: .5rem .75rem;
+	margin-left: -1px;
+	line-height: 1.25;
+	color: #007bff;
+	background-color: #fff;
+	border: 1px solid #dee2e6;
 }
 
 .hr-nav {
