@@ -8,10 +8,6 @@ menu:
     url: /archives/
     intro: "Archives"
     icon: "fa fa-archive"
-  - title: About
-    url: /about
-    intro: " About me"
-    icon: "fa fa-info-cirle"
 
 rss: /atom.xml
 
