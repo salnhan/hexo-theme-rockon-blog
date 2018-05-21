@@ -80,8 +80,10 @@ nav {
 	font-size: 0.7rem;
 }
 
-.article-category-link {
+a.article-category-link {
+	color: #0b8092;
 	font-size: 0.7rem;
+	font-weight: bold;
 }
 
 .article-tag-list {
@@ -92,6 +94,14 @@ nav {
 .article-tag-list-item {
 	display: inline;
 	margin-right: 2px;
+}
+
+a.article-tag-list-link {
+	background-color: #d63965;
+	color: #fff;
+	padding: 0 2px 2px 2px;
+	border-radius: 3px;
+	font-weight: bold;
 }
 
 
